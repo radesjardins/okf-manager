@@ -4,10 +4,10 @@
   "description": "Build and maintain an Open Knowledge Format (OKF) knowledge base from Claude Code — for developers consolidating a repo's knowledge and for non-technical knowledge workers building an AI-readable second brain. OKF bundles are plain directories of markdown files with YAML frontmatter: human-readable, git-friendly, and consumable by any AI agent without an SDK or server.\n\nThe plugin keeps a bundle healthy and hard to let rot, with a dependency-free stdlib Python 3 engine that never overwrites your files without a preview.\n\nAuthoring and upkeep: `start` (guided onboarding), `new` (scaffold a concept or bundle), `add` (import existing markdown), `move` (link-safe rename/relocate), `check` (validate conformance — frontmatter + required `type`, broken cross-links, orphaned and stale concepts, index drift, `okf_version`, and agent-curated concepts missing citations — with a preview-gated `--fix`), and `map` (a self-contained, zero-dependency offline browser for the bundle — search, a reader panel with links and backlinks, and a needs-attention lens mirroring `check`, plus an optional graph view), plus an always-on `okf` conventions skill. Ingestion: `convert` (non-markdown → concept), `scan` (triage a repo or folder for importable knowledge), and `find` (ranked search over the bundle). Producing: `seed` (generate concepts in bulk from a SQLite database, OpenAPI/JSON-Schema file, or directory tree) and `enrich` (grow a bundle from the web under a required domain allowlist and a hard page cap). Sync-agnostic — manage the knowledge here, sync the folder however you like (git, cloud folder, Obsidian, Syncthing).",
   "author": {
     "name": "RAD",
-    "url": "https://github.com/radesjardins"
+    "url": "https://github.com/RadOrigin-LLC"
   },
   "license": "Apache-2.0",
-  "homepage": "https://github.com/radesjardins/okf-manager",
-  "repository": "https://github.com/radesjardins/okf-manager",
+  "homepage": "https://github.com/RadOrigin-LLC/okf-manager",
+  "repository": "https://github.com/RadOrigin-LLC/okf-manager",
   "keywords": ["okf", "open-knowledge-format", "knowledge-base", "knowledge-management", "markdown", "yaml-frontmatter", "second-brain", "vibe-coding", "obsidian", "ai-context"]
 }
