@@ -1,0 +1,10 @@
+# Generated visualizations
+viz.html
+*-viz.html
+
+# Python
+__pycache__/
+*.pyc
+
+# Local index cache (future use)
+.indexcache/

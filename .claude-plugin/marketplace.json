@@ -1,0 +1,21 @@
+{
+  "name": "okf-manager",
+  "owner": {
+    "name": "RAD",
+    "email": "rad@radesjardins.com"
+  },
+  "metadata": {
+    "description": "okfm (OKF Manager): build and maintain an Open Knowledge Format knowledge base from Claude Code — a directory of markdown + YAML frontmatter readable by humans and any AI agent, with no SDK or server.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "okfm",
+      "source": ".",
+      "description": "Build and maintain Open Knowledge Format (OKF) knowledge bases — directories of markdown + YAML frontmatter readable by humans and any AI agent, with no SDK or server. Dependency-free stdlib Python 3 engine that never overwrites your files without a preview. Authoring & upkeep: start, new, add, move, check (with a preview-gated --fix), and map (a self-contained offline browser with a needs-attention lens). Ingestion: convert, scan, find. Producing: seed (SQLite / OpenAPI-JSON-Schema / directory-tree) and enrich (bounded web sourcing under a required allowlist and page cap). Nested index.md tree + log.md owned by the engine; every write previews first.",
+      "category": "productivity",
+      "homepage": "https://github.com/radesjardins/okf-manager",
+      "license": "Apache-2.0"
+    }
+  ]
+}
