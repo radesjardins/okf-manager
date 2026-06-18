@@ -14,6 +14,13 @@ allowed-tools: Bash Read Edit
 
 How to behave inside an OKF bundle so it stays healthy.
 
+## Engine invocation
+These skills call the okfm engine through one CLI, written here as `okf <command>`. Resolve it for the current harness:
+- **Claude Code:** `python "${CLAUDE_PLUGIN_ROOT}/scripts" <command> <args>` (the form used in the command skills).
+- **Any other harness / plain shell:** `okf <command>` (the CLI on PATH) or `python okf.pyz <command>` or `python /path/to/scripts <command>`.
+
+The `<command> <args>` part is identical everywhere; subcommands are `new`, `add`, `convert`, `seed`, `move`, `check`, `map`, `find`, `scan`. Porting a skill to another harness is just swapping that prefix.
+
 ## Workflow
 - **Read before work:** start from the relevant concept, follow links for context, treat notes as orientation, then verify against the live repo/state.
 - **Write back:** when a durable decision changes, update the concept and add a `log.md` entry.

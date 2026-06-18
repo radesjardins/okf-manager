@@ -23,7 +23,7 @@ Bring a non-markdown source into the bundle as one concept.
 3. Decide the **dest** path (`<folder>/<slug>.md`) and the frontmatter: **type**, **title**, **description**, **tags**. Read the source to ground these.
 4. **One file → one concept.** If a source is too large or covers several distinct concepts, split it: run `convert` (or `new --body`) once per concept rather than producing one giant note.
 5. **Preview:** run with `--dry-run --json` and summarize the plan (source, format, dest, what gets indexed):
-   `python "${CLAUDE_PLUGIN_ROOT}/scripts/okf_convert.py" <src> <dest> --bundle <root> --type "<type>" --title "<title>" --description "<desc>" --dry-run --json`
+   `python "${CLAUDE_PLUGIN_ROOT}/scripts" convert <src> <dest> --bundle <root> --type "<type>" --title "<title>" --description "<desc>" --dry-run --json`
 6. On the user's OK, run without `--dry-run`. The engine converts the body (CSV → table, JSON → fenced block, HTML → headings/lists/links, TXT → text), writes the concept, regenerates the index, and logs a `Convert` entry.
 7. Run `check` and report. Collisions are refused, not clobbered — rename or pass `--force` only on explicit confirmation.
 

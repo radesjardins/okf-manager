@@ -23,8 +23,8 @@ previewed first.
    - **path** — `<folder>/<slug>.md` under the bundle, grouping with related concepts. Slug is kebab-case of the title.
 2. Determine the bundle: the path the user named, else the bundle they're working in. To create a brand-new bundle, add `--init --name "<Bundle Name>"`.
 3. **Preview:** run with `--dry-run --json` and show the user, in plain English, exactly what will be created/updated:
-   `python "${CLAUDE_PLUGIN_ROOT}/scripts/okf_new.py" <path> --bundle <root> --type "<type>" --title "<title>" --description "<desc>" --tag <t1> --tag <t2> --dry-run --json`
+   `python "${CLAUDE_PLUGIN_ROOT}/scripts" new <path> --bundle <root> --type "<type>" --title "<title>" --description "<desc>" --tag <t1> --tag <t2> --dry-run --json`
 4. On the user's OK, run the same command **without** `--dry-run` to write. The engine sets `timestamp` and `curated_by: agent` automatically.
-5. Run `check` (the check skill / `okf_check.py`) and report the result.
+5. Run `check` (the check skill / `okf check`) and report the result.
 
 Machine-drafted concepts carry `curated_by: agent`. When the user has reviewed and verified one, change it to `curated_by: human`.

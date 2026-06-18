@@ -16,7 +16,7 @@ Relocate a concept and keep every cross-link intact.
 
 1. Identify the source path and the destination path (both inside the bundle).
 2. **Preview:** run with `--dry-run --json` and show the user the move plus every backlink that will be rewritten and in how many files:
-   `python "${CLAUDE_PLUGIN_ROOT}/scripts/okf_move.py" <old> <new> --bundle <root> --dry-run --json`
+   `python "${CLAUDE_PLUGIN_ROOT}/scripts" move <old> <new> --bundle <root> --dry-run --json`
 3. On the user's OK, run without `--dry-run`. The engine moves the file, rewrites inbound backlink destinations (in the bundle's `link_style`, default absolute), regenerates the index, and logs the move.
 4. Run `check` and report — confirm no new broken links appeared.
 

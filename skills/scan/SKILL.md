@@ -16,7 +16,7 @@ allowed-tools: Bash Read Glob
 Triage a folder into the bundle without dumping noise into it.
 
 1. List the candidates (markdown + convertible text formats) with metadata:
-   `python "${CLAUDE_PLUGIN_ROOT}/scripts/okf_scan.py" <folder> --bundle <root> --json`
+   `python "${CLAUDE_PLUGIN_ROOT}/scripts" scan <folder> --bundle <root> --json`
    Each candidate carries `ext`, `size`, `first_heading`, `has_frontmatter`, and `in_bundle`.
 2. **Apply the capture filter** to each candidate — keep only what is Relevant, Actionable, has Depth, and is Authoritative. Skip raw article dumps, image-only notes, secrets, uncurated transcripts, and anything already `in_bundle`. Read promising files to judge; use `first_heading` to prioritize.
 3. **Propose** a short import plan: for each kept file, the dest path (which domain folder it belongs in) and the route — `.md` → `add`, everything else → `convert`. Show it as a list; import nothing yet.

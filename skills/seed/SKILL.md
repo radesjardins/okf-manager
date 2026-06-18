@@ -22,7 +22,7 @@ and dependency-free; every write previews first; generated concepts are
    (`sqlite` / `openapi` / `tree`); pass `--mode` to override, and `--dest-dir`
    to choose the subdirectory (defaults to a slug of the source name).
 2. **Preview:**
-   `python "${CLAUDE_PLUGIN_ROOT}/scripts/okf_seed.py" <source> --bundle <root> --dest-dir <subdir> --dry-run --json`
+   `python "${CLAUDE_PLUGIN_ROOT}/scripts" seed <source> --bundle <root> --dest-dir <subdir> --dry-run --json`
    Show the user the list of concepts that would be created and where.
 3. On their OK, run the same command **without** `--dry-run`. Existing files are
    skipped unless `--force`. The engine sets `timestamp` and `curated_by: agent`,

@@ -20,7 +20,7 @@ Stand up a healthy bundle and make the first capture feel easy.
    - Where should it live (path)?
 2. **Teach the capture filter** in one line: capture things that are **Relevant, Actionable, have Depth, and are Authoritative**. Don't capture raw article dumps, image-only notes, secrets, or uncurated transcripts.
 3. **Scaffold** the bundle by creating its first concept with `--init`, which also creates `index.md`, `log.md`, and `okf.json`:
-   `python "${CLAUDE_PLUGIN_ROOT}/scripts/okf_new.py" <folder>/<first-slug>.md --bundle <root> --init --name "<Bundle Name>" --type "<type>" --title "<title>" --description "<desc>" --dry-run --json`
+   `python "${CLAUDE_PLUGIN_ROOT}/scripts" new <folder>/<first-slug>.md --bundle <root> --init --name "<Bundle Name>" --type "<type>" --title "<title>" --description "<desc>" --dry-run --json`
    Show the plan, then run it for real on the user's OK.
 4. Propose a starter folder shape that fits their answer (e.g. `concepts/`, `projects/`, `providers/`, `runbooks/` for a dev bundle; or PARA-style `projects/`, `areas/`, `resources/` with a `00-inbox/` for a personal brain). Create folders by placing concepts in them via `new`.
 5. Walk them through creating 1–2 real concepts with the `new` skill, then run `check` and `map` so they see the payoff immediately.

@@ -38,4 +38,4 @@ all provenance and limits live in this skill.
 4. Run `check` and report: pages fetched, concepts added/augmented, pages skipped (with reasons), and anything left over the cap.
 
 Writing a reference (preview first, then again without `--dry-run` on the user's OK):
-`python "${CLAUDE_PLUGIN_ROOT}/scripts/okf_new.py" references/<slug>.md --bundle <root> --type Reference --title "<title>" --citation "<url>" --body "<extracted summary>" --dry-run --json`
+`python "${CLAUDE_PLUGIN_ROOT}/scripts" new references/<slug>.md --bundle <root> --type Reference --title "<title>" --citation "<url>" --body "<extracted summary>" --dry-run --json`
